@@ -1,4 +1,4 @@
-public class Node {
+public class Node{
     
     /*
     This is used to create the 2 attributes of a Linked List.
