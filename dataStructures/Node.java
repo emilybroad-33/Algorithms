@@ -1,5 +1,5 @@
 public class Node {
-
+    
     /*
     This is used to create the 2 attributes of a Linked List.
     They're both set to blank (or null) right now so that they always have some sort of value.
