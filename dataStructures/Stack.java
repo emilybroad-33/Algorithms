@@ -5,7 +5,7 @@ public class Stack extends Node{
 
     public Stack() {
         super(myName);
-    }
+    }//Stack constructor
     
     public void push(String data) {
         Node x = new Node(data);//creates an object using the data entered
@@ -13,13 +13,15 @@ public class Stack extends Node{
         top = x;//the new top, after being pushed on
     }//push
 
-    public Node pop() {
-        Node popVal = null;
-        if (!(isEmpty())) {//if it's empty, we skip this
-            Node curTop = top;//temp value for the top before it is switched with the next pointer
+    public String pop() {
+        String popVal = null;//return val
+
+        if (!isEmpty()) {//nothing to be popped if there's nothing in the stack
+            String curTop = top.name;//temp value for the top before it is switched with the next pointer
             top = top.next;//now the element below the element just popped is on top
             popVal = curTop;//the top is popped off the stack
         }//if
+        
         return popVal;
     }//pop
 
@@ -31,4 +33,4 @@ public class Stack extends Node{
         
         return empty;
     }//isEmpty
-}//Stack
+}
